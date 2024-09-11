@@ -16,12 +16,13 @@ main {
 }
 
 .section-column {
+    display: none;
     width: 10%;
     background-color: brown;
 }
 
 .section-videos {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     background-color: yellow;
