@@ -7,6 +7,18 @@ header {
     height: 100px;
     background-color: blue;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+.buscador {
+    display: none;
+}
+
 
 main {
     height: 100vh;
