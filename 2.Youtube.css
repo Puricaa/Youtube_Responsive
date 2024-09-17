@@ -4,19 +4,37 @@ body {
 }
 
 header {
-    height: 100px;
+    height: 50px;
+    padding: 0 10px 0 10px;
     background-color: blue;
 }
 nav {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: black;
+}
+.menu-logo {
+    display: flex;
+    gap: 20px;
 }
 .logo {
-    display: flex;
-    flex-direction: row;
+    width: 100px;
 }
 .buscador {
     display: none;
+}
+.botones>button {
+    border: none;
+    border-radius: 1px;
+    background-color: blue;
+}
+.svg {
+    width: 20px;
+    border-radius: 100px;
+    
+    background-color: black;
 }
 
 
