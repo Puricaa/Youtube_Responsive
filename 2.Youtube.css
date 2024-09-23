@@ -1,11 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 header {
     height: 50px;
-    padding: 10px 10px 0 10px;
+    padding: 10px 20px 0 10px;
     background-color: blue;
 }
 nav {
@@ -13,18 +14,20 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
     background-color: black;
 }
 .menu-logo {
     display: flex;
     align-items: center;
+    width: 160px;
     gap: 20px;
+    background-color: yellow;
 }
 .menu {
+    height: 24px;
     border-radius: 100%;
-    padding: 10px;
-    background-color: yellow;
+    padding: 8px;
+    background-color: blue;
 }
 .logo {
     width: 100px;
@@ -32,17 +35,31 @@ nav {
 .buscador {
     display: none;
 }
-.botones>button {
-    border: none;
-    border-radius: 1px;
+.display-botones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.botones {
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
     background-color: blue;
 }
 .svg {
-    width: 20px;
+    width: 24px;
     border-radius: 100px;
-    
+    padding: 8px;
+    color: white;
     background-color: black;
 }
+.svg-A {
+    width: 28px;
+    padding: 2px;
+    border-radius: 100%;
+    background-color: #093fe1;
+}
+
 
 
 main {
@@ -64,11 +81,42 @@ main {
     flex-direction: column;
     background-color: yellow;
 }
-.row-nav {
-    height: 10vh;
+.espaciado {
+    /* height: 10vh; */
     background-color: chocolate;
+    padding: 10px 10px 10px 10px;
+}
+.row-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+.row-nav>button {
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    background-color: rgb(75, 75, 75);
 }
 .videos {
-    height: 90vh;
+    height: 90%;
     background-color: darkgrey;
+}
+.videos-img>img {
+    display: grid;
+    grid-template-columns: 100%;  
+    width: 100%;
+    gap: 15px;
+}
+
+
+
+@media only screen and (min-width:1200px) {
+    .videos-img>img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  
+        gap: 15px;
+    }
 }

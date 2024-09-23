@@ -11,7 +11,7 @@
       <nav>
         <div class="menu-logo">
           <div class="menu">
-            <svg fill="white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" focusable="false" id="menu"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+            <svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" focusable="false" id="menu"><path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
           </div>
           <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" 
@@ -45,7 +45,7 @@
         <div class="buscador">
           <div class="barra-nav">
             <input type="text" name="" id="" placeholder="Buscar">
-            <button>
+            <button class="button-lupa">
               <svg class="svg" fill="white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
             </button>
           </div>
@@ -54,13 +54,17 @@
           </button>
         </div>
 
-        <div class="botones">
-          <svg class="svg" id="button-responsive" fill="white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
-          <svg class="svg" id="button-responsive" fill="white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg>
-
-          <svg class="svg" id="subir" fill="white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg>
-          <svg class="svg" id="bell" fill="white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
-          <img class="svg" src="./icons/letter-a-svgrepo-com.svg" alt="" class="icons-3" id="letra-A">
+        <div class="display-botones">
+          <div class="botones">
+            <svg class="svg" id="button-responsive" fill="white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
+            <svg class="svg" id="button-responsive" fill="white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path d="M12 3c-1.66 0-3 1.37-3 3.07v5.86c0 1.7 1.34 3.07 3 3.07s3-1.37 3-3.07V6.07C15 4.37 13.66 3 12 3zm6.5 9h-1c0 3.03-2.47 5.5-5.5 5.5S6.5 15.03 6.5 12h-1c0 3.24 2.39 5.93 5.5 6.41V21h2v-2.59c3.11-.48 5.5-3.17 5.5-6.41z"></path></svg>
+  
+            <svg class="svg" id="subir" fill="white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg>
+            <svg class="svg" id="bell" fill="white" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" focusable="false"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
+          </div>
+          <div>
+            <svg class="svg-A" id="letter-A" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet" fill="#000000"><g stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><circle cx="32" cy="32" r="30" fill="#093fe1"></circle><path d="M28.6 17.5h6.9l10.3 29h-6.6l-1.9-6H26.6l-2 6h-6.3l10.3-29m-.4 18h7.4L32 24.1l-3.8 11.4" fill="#ffffff"></path></g></svg>
+          </div>
         </div>
       </nav>
     </header>
@@ -74,22 +78,30 @@
       </div>
 
       <div class="section-videos">
-        <div class="row-nav">
-
+        <div class="espaciado">
+          <div class="row-nav">
+            <button>Todos</button>
+            <button>Ciencia ficción</button>
+            <button>Manga</button>
+            <button>Series de televisión</button>
+            <button>Suspenso</button>
+          </div>
         </div>
         <div class="videos">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
-          <img src="" alt="">
+          <div class="videos-img">
+            <img src="./capture-img/Captura-1.jpeg" alt="">
+            <img src="./capture-img/Captura-2.jpeg" alt="">
+            <img src="./capture-img/Captura-3.jpeg" alt="">
+            <img src="./capture-img/Captura-4.jpeg" alt="">
+            <img src="./capture-img/Captura-5.jpeg" alt="">
+            <img src="./capture-img/Captura-6.jpeg" alt="">
+            <img src="./capture-img/Captura-7.jpeg" alt="">
+            <img src="./capture-img/Captura-8.jpeg" alt="">
+            <img src="./capture-img/Captura-9.jpeg" alt="">
+            <img src="./capture-img/Captura-10.jpeg" alt="">
+            <img src="./capture-img/Captura-11.jpeg" alt="">
+            <img src="./capture-img/Captura-12.jpeg" alt="">
+          </div>
         </div>
       </div>
     </main>
