@@ -76,7 +76,7 @@ svg, img {
 }
 input {
     background-color: #121212;
-    border-radius: 20px 0 0 20px;
+    border-radius: 25px 0 0 25px;
     padding: 5px 20px;
     width: 150%;
     outline: none;
@@ -84,7 +84,7 @@ input {
     border: #303030 1px solid;
 }
 .barra-nav button {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 25px 25px 0;
     border: #303030 1px solid;
     padding: 5px 20px;
     background-color: #222222;

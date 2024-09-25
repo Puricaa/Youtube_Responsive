@@ -12,25 +12,28 @@ body {
 
 /* NAVEGADOR */
 header {
-    height: 50px;
-    padding: 10px 20px 10PX 10px;
+    display: flex;
+    align-items: center;
+    padding: 3px 24px 15PX 14px;
     background-color: blue;
 }
 nav {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
 }
 .menu-logo {
     display: flex;
     align-items: center;
-    width: 160px;
-    gap: 20px;
+    width: 145px;
+    gap: 16px;
+    padding-top: 4px;
     background-color: yellow;
 }
-.menu {
+.menu>svg {
     height: 24px;
     border-radius: 100%;
     padding: 8px;
@@ -39,22 +42,65 @@ nav {
 .logo {
     width: 100px;
 }
+
 .buscador {
     display: none;
+    /* background-color: yellow; */
+    width: 50%;
+    gap: 16px;
 }
+.barra-nav {
+    display: flex;
+    width: 150%;
+}
+.barra-nav>input {
+    width: 100%;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    border: #303030 1px solid;
+    border-radius: 25px 0 0 25px;
+    background-color: #121212;
+    font-size: 16px;
+}
+.barra-nav>button {
+    border: #303030 1px solid;
+    border-radius: 0 25px 25px 0;
+    padding: 5px 20px;
+    background-color: #222222;
+}
+.barra-nav>button>svg {
+    border-radius: 0 25px 25px 0;
+    background-color: #222222;
+}
+.button-microphono {
+    padding: 6px;
+    border: none;
+    border-radius: 100%;
+    background-color: #222222;
+}
+.button-microphono>svg {
+    width: 24px;
+    border-radius: 100%;
+    background-color: #222222;
+}
+
 .display-botones {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
 }
 .botones {
     display: flex;
-    justify-content: space-between;
-    width: 160px;
+    width: 156px;
     background-color: blue;
 }
-.svg {
-    width: 24px;
+.botones-div {
+    display: flex;
+    /* gap: 10px; */
+}
+.botones-div>svg {
+    width: 23px;
     border-radius: 100px;
     padding: 8px;
     color: white;
@@ -70,29 +116,53 @@ nav {
 
 
 main {
-    height: 100vh;
     display: flex;
-    flex-direction: row;
-    background-color: black;
+    flex-direction: column;
 }
 
 /* COLUMNA DE OPCIONES */
 .section-column {
     display: none;
-    width: 10%;
+    justify-content: center;
     background-color: brown;
 }
+.column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding-top: 15-px;
+    gap: 20px;
+}
+.div-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 24px;
+}
+.div-column>div>svg{
+    fill: white;
+}
+.div-column>div>span {
+    font-size: 10px;
+}
+
 
 /* CONTENIDO PRINCIPAL */
 .section-videos {
     width: 100%;
-    display: flex;
-    flex-direction: column;
     background-color: yellow;
 }
+.div-espacio {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+}
+
 .espaciado {
+    width: 100%;
     background-color: chocolate;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 10px 30px;
 }
 .row-nav {
     display: flex;
@@ -111,10 +181,15 @@ main {
 
 /* CONTENIDOS-VIDEOS */
 .videos {
+    width: 100%;
     display: grid;
     gap: 45px 10px;
-    width: 100%;
+    /* padding: 30px; */
     background-color: gray;
+}
+.video-espaciado {
+    padding: 32px;
+    width: 100%;
 }
 .img-video {
     display: grid;
@@ -153,13 +228,34 @@ main {
 
 
 @media only screen and (min-width:1200px) {
+    main {
+        display: grid;
+        grid-template-columns: 5% auto;
+    }
+    
     .buscador {
         display: flex;
     }
+
+    .botones {
+        width: 88px;
+        background-color: blue;
+    }
+    .botones-div {
+        display: flex;
+        gap: 10px;
+    }
+    #button-responsive {
+        display: none;
+    }
+
     .section-column {
         display: flex;
     }
 
+    .video-espaciado {
+        /* display: flex; */
+    }
     .videos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
