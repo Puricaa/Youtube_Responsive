@@ -102,7 +102,6 @@ nav {
 }
 .botones-div {
     display: flex;
-    /* gap: 10px; */
 }
 .botones-div>svg {
     width: 24px;
@@ -129,7 +128,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-
 /* COLUMNA DE OPCIONES */
 .section-column {
     display: none;
@@ -192,7 +190,7 @@ main {
     /* width: 100%; */
     display: grid;
     gap: 45px 10px;
-    padding: 4% 6% 6% 6%;
+    padding: 24px 26px;
     /* background-color: gray; */
 }
 .video-espaciado {
@@ -233,43 +231,6 @@ main {
     gap: 5px;
 }
 
-/* @media only screen and (min-width:600px){
-    .videos {
-        display: grid;
-        padding: 4% 8% 8% 8%;
-    }
-} */
-
-/* @media only screen and (min-width:655px) {
-    header {
-        display: flex;
-        padding: 10px 38px 18PX 20px;
-    }
-    .buscador {
-        display: flex;
-        width: 30%;
-    }
-    .display-botones {
-        display: flex;
-        gap: 30px;
-    }
-    .botones {
-        width: 80px;
-    }
-    .botones-div {
-        display: flex;
-        gap: 10px;
-    }
-    #button-responsive {
-        display: none;
-    }
-
-    .videos {
-        display: grid;
-        padding: 4% 12% 12% 12%;
-    }
-
-} */
 
 @media only screen and (min-width:699px) {
     .videos {
